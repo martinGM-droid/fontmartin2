@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>font</title>
+      <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+      <section class="editing-tools">
+            <div class="flex">
+                  <div id="fonts-container" class="search-style">
+                        <input id="search-fonts" type="text" class="search-style">
+                        <button id="button-fonts" class="search-style">
+                              <div id="fonts-arrow" class="arrow"></div>
+                        </button>
+                  </div>
+                  <div id="fonts-dropdown" class="dropdown-style">
+                        <ul class="fonts">
+                              <li class="hide" id="Arial">Arial</li>
+                              <li class="hide" id="Verdana">Verdana</li>
+                              <li class="hide" id="TimesNewRoman">Times New Roman</li>
+                              <li class="hide" id="Georgia">Georgia</li>
+                              <li class="hide" id="CourierNew">Courier New</li>
+                              <li class="hide" id="Tahoma">Tahoma</li>
+                              <li class="hide" id="TrebuchetMS">Trebuchet MS</li>
+                              <li class="hide" id="LucidaConsole">Lucida Console</li>
+                              <li class="hide" id="Impact">Impact</li>
+                              <li class="hide" id="ComicSansMS">Comic Sans MS</li>
+                              <li class="hide" id="PalatinoLinotype">Palatino Linotype</li>
+                              <li class="hide" id="Garamond">Garamond</li>
+                              <li class="hide" id="CenturyGothic">Century Gothic</li>
+                              <li class="hide" id="Calibri">Calibri</li>
+                              <li class="hide" id="Cambria">Cambria</li>
+                        </ul>
+                  </div>
+                  <div id="size-container" class="search-style">
+                        <input id="search-size" type="number" class="search-style">
+                        <button id="button-size" class="search-style">
+                              <div id="size-arrow" class="arrow"></div>
+                        </button>
+                  </div>
+                  <div id="size-dropdown" class="dropdown-style">
+                        <ul class="size">
+                              <li>1</li>
+                              <li>2</li>
+                              <li>3</li>
+                              <li>4</li>
+                              <li>5</li>
+                              <li>6</li>
+                              <li>7</li>
+                        </ul>
+                  </div>
+                  <div class="text-styles">
+                        <button id="bold" class="button"></button>
+                        <button id="italic" class="button"></button>
+                        <button id="underline" class="button"></button>
+                        <button id="strikethrough" class="button"></button>
+                  </div>
+                  <div class="text-format">
+                        <input type="color" id="page-background" class="color">
+                  </div>
+                  <div class="text-format">
+                        <input type="color" id="page-input-background" class="color">
+                  </div>
+                  <div class="text-format">
+                        <input type="color" id="page-input-color" class="color">
+                  </div>
+                  <div id="container-music">
+                        <div class="music">
+                              <audio id="tango-of-death" src="/audio/antonio_-_tango-smerti.mp3"></audio>
+                              <audio id="moonlight-sonata" src="/audio/bethoven_-_lunnaya-sonata.mp3"></audio>
+                              <audio id="magic-flute" src="/audio/mocart_-_volshebnaya-fleyta.mp3"></audio>
+                        </div>
+                        <div id="music-img">
+                              <div id="music-play-img">
+                              <img src="" alt="">
+                              </div>
+                        </div>
+                        <div id="music-dropdown" class="dropdown-style">
+                              <div class="tango-of-death music-head "></div>
+                              <div class="moonlight-sonata music-head "></div>
+                              <div class="magic-flute music-head "></div>
+                        </div>
+                  </div>
+                  <div id="player">
+                        <div class="volume">
+                              <input type="range" id="volume" value="100" max="100" onchange="setVolume()" />
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <div class="page-container">
+            <div class="page" contenteditable="true"></div>
+      </div>
+      <script src="scripts.js"></script>
+</body>
+
+</html>
